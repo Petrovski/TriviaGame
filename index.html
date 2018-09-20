@@ -18,13 +18,13 @@
         <header>
             <h1>Nature's Amazing Records Trivia</h1>
         </header>
-        <form>
+        <form id="quiz">
             <button id="start" type="button" class="btn btn-primary" style="margin-top: 20px; background: green;">START!</button>
-            <p>Time Remaining: <span id="timer">90</span></p>
+            <p>Time Remaining: <span id="timer">60</span></p>
             <p class="question">Which volcanic eruption produced the loudest sound ever heard by humanity?</p>
             <div class="row">
                 <input type="radio" name="question1"><span>Mt. St. Helens</span>
-                <input type="radio" name="question1"><span>Krakatoa</span>
+                <input type="radio" name="question1" class="rightanswer"><span>Krakatoa</span>
                 <input type="radio" name="question1"><span>Mt. Vesuvius</span>
                 <input type="radio" name="question1"><span>Tambora</span>
             </div>
@@ -33,7 +33,7 @@
             <div class="row">
                 <input type="radio" name="question2"><span>Hurricane Irma</span>
                 <input type="radio" name="question2"><span>Hurricane Harvey</span>
-                <input type="radio" name="question2"><span>Typhoon Tip</span>
+                <input type="radio" name="question2" class="rightanswer"><span>Typhoon Tip</span>
                 <input type="radio" name="question2"><span>Bhola Cyclone</span>
             </div>
             <br>
@@ -42,12 +42,12 @@
                 <input type="radio" name="question3"><span>Saltwater Crocodile</span>
                 <input type="radio" name="question3"><span>Giraffe</span>
                 <input type="radio" name="question3"><span>African Elephants</span>
-                <input type="radio" name="question3"><span>Blue Whale</span>
+                <input type="radio" name="question3" class="rightanswer"><span>Blue Whale</span>
             </div>
             <br>
             <p class="question">What is the fastest wind speed from a tornado ever recorded on earth?</p>
             <div class="row">
-                <input type="radio" name="question4"><span>301 MPH</span>
+                <input type="radio" name="question4" class="rightanswer"><span>301 MPH</span>
                 <input type="radio" name="question4"><span>347 MPH</span>
                 <input type="radio" name="question4"><span>289 MPH</span>
                 <input type="radio" name="question4"><span>272 MPH</span>
@@ -55,7 +55,7 @@
             <br>
             <p class="question">What was the coldest natural temperature ever recorded on earth?</p>
             <div class="row">
-                <input type="radio" name="question5"><span>-128.6 F</span>
+                <input type="radio" name="question5" class="rightanswer"><span>-128.6 F</span>
                 <input type="radio" name="question5"><span>-97.8 F</span>
                 <input type="radio" name="question5"><span>-136.3 F</span>
                 <input type="radio" name="question5"><span>-102.9 F</span>
@@ -63,7 +63,7 @@
             <br>
             <p class="question">What was the highest rainfall (in inches) in a 24 hour period recorded on earth?</p>
             <div class="row">
-                <input type="radio" name="question6"><span>73 inches</span>
+                <input type="radio" name="question6" class="rightanswer"><span>73 inches</span>
                 <input type="radio" name="question6"><span>90 inches</span>
                 <input type="radio" name="question6"><span>46 inches</span>
                 <input type="radio" name="question6"><span>57 inches</span>
@@ -74,7 +74,7 @@
                 <input type="radio" name="question7"><span>38.6 FT</span>
                 <input type="radio" name="question7"><span>15.8 FT</span>
                 <input type="radio" name="question7"><span>21.2 FT</span>
-                <input type="radio" name="question7"><span>34.8 FT</span>
+                <input type="radio" name="question7" class="rightanswer"><span>34.8 FT</span>
             </div>
             <br>
             <p class="question">What was the costliest natural disasted ever recorded on earth?</p>
@@ -82,12 +82,15 @@
                 <input type="radio" name="question8"><span>Hurricane Katrina</span>
                 <input type="radio" name="question8"><span>Valdivia Earthquake</span>
                 <input type="radio" name="question8"><span>Chernobyl Disaster</span>
-                <input type="radio" name="question8"><span>Tohoku Earthquake</span>
+                <input type="radio" name="question8" class="rightanswer"><span>Tohoku Earthquake</span>
             </div>
             <br>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button id="submit" type="button" class="btn btn-primary">Submit</button>
+            <div id="answersDiv"></div>
         </form>
     </div>
+
+    
 
 
 

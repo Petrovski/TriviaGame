@@ -26,6 +26,10 @@ div.row {
     border-radius: 0px 8px 0px 8px;
 }
 
+#answersDiv {
+    font-size: 50px;
+}
+
 #timer {
     font-size: 40px;
 }

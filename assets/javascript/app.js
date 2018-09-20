@@ -1,6 +1,7 @@
     var correctAnswers = 0
     var wrongAnswers = 0 
-    var gameTime = 90
+    var gameTime = 60
+    var rightAnswer = document.getElementsByClassName("rightanswer");
     
     var triviaGame = {
         trivia: [{
@@ -54,16 +55,24 @@
                         document.getElementById('timer').innerHTML = gameTime + "";
                         gameTime = gameTime - 1;
                     } else {
-                        gameTime = 90
+                        gameTime = 60
                         document.getElementById('timer') .innerHTML = gameTime + "";
                         alert("Times up! Try again!");
                         clearInterval(sTime);
+                        document.getElementById("quiz").reset();
                     }
                 }, 1000);
             });
         });
 
-
+        $("#submit").on("click", "", function(){
+            var countChecked = function () {
+                var n = $("input:checked.rightanswer").length;
+                $("#answersDiv").text("You got " + n + (n === 1 ? " is" : " answers right!"));
+                document.getElementById("quiz").reset();
+            };
+            countChecked();
+            });
 
 
 
